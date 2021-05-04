@@ -8,7 +8,7 @@ const Nav = ({ toggleNavVisibility, isNavOpen, navArr, selectedTab, selectTabFun
     <StyledNav className={!isNavOpen ? 'hidden' : null}>
       <HamburgerButton toggleNavVisibility={toggleNavVisibility} isNavOpen={isNavOpen} />
       <StyledUl>
-        {navArr.map((el, i) => (
+        {navArr.map((el, i) => ( //destructuring on el - consider changing name to link? NavElem?
           <NavLink
             toggleNavVisibility={toggleNavVisibility}
             isNavOpen={isNavOpen}
