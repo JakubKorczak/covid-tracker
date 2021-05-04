@@ -1,5 +1,6 @@
 import React from 'react';
 import { theme } from 'assets/styles/theme';
+//prop-types?
 
 import { Wrapper, RingSpinner } from './StyledLoader';
 
