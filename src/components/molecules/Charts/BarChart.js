@@ -4,7 +4,7 @@ import ChartContainer from './StyledChart';
 
 const BarChart = ({ datasets, labels }) => {
   const chartData = {
-    labels: labels,
+    labels: labels, //remove val if key has the same name as var
     datasets: datasets,
   };
 
@@ -14,7 +14,7 @@ const BarChart = ({ datasets, labels }) => {
         data={chartData}
         height={700}
         width={800}
-        options={{
+        options={{ //think about moving options to common file.
           maintainAspectRatio: false,
           scales: {
             yAxes: [
