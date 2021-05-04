@@ -15,7 +15,7 @@ const ChartBox = ({ labels, data, countries, callback, children, selectedCountry
 
   return (
     <StyledChartBox>
-      <Headline size="4" isAdditionalMargin={selectedCountry ? false : true}>
+      <Headline size="4" isAdditionalMargin={selectedCountry ? false : true}> //      <Headline size="4" isAdditionalMargin> use dafault props - set to false
         {children}
       </Headline>
       {countries ? (
