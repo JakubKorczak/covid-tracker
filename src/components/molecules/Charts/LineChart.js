@@ -7,10 +7,13 @@ const LineChart = ({ datasets, labels }) => {
     labels: labels,
     datasets: datasets,
   };
+  
+  const props = {};
 
   return (
     <ChartContainer>
       <Line
+        {...props}
         data={chartData}
         height={700}
         width={800}
