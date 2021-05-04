@@ -25,6 +25,7 @@ const Home = () => {
 
   const renderContent = (data) => {
     if (data) {
+      const { active } = data;
       return (
         <>
           <Headline size="2">Podstawowe dane</Headline>
