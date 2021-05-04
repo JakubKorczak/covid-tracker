@@ -18,9 +18,9 @@ const ChartBox = ({ labels, data, countries, callback, children, selectedCountry
       <Headline size="4" isAdditionalMargin={selectedCountry ? false : true}>
         {children}
       </Headline>
-      {countries ? (
+      {countries && (
         <SelectForm countries={countries} callback={callback} data={data} selectedCountry={selectedCountry} isDisabled={dataset ? false : true} />
-      ) : null}
+      )}
       {!isLoader ? isBarChart ? <BarChart datasets={dataset} labels={labels} /> : <LineChart datasets={dataset} labels={labels} /> : <Loader />}
     </StyledChartBox>
   );
