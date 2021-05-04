@@ -24,7 +24,7 @@ const Home = () => {
   }, []);
 
   const renderContent = (data) => {
-    if (data) {
+    if (data) { //tenary
       return (
         <>
           <Headline size="2">Podstawowe dane</Headline>
